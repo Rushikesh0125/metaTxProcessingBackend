@@ -13,6 +13,11 @@ import { Description } from "@tsed/swagger";
 import { User } from "../models/User";
 import { UserService } from "../service/UserService";
 
+/*
+ * @controller - User
+ * To handle registering, retrival, deletion of users
+ */
+
 @Controller("/users")
 export class UserController {
   constructor(private userService: UserService) {}

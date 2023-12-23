@@ -1,6 +1,8 @@
 import { ethers } from "ethers";
 import { MinimalForwarder as address } from "../constants";
 
+//Exports the forwarder contract instance
+
 const abi = [
   { inputs: [], stateMutability: "nonpayable", type: "constructor" },
   {

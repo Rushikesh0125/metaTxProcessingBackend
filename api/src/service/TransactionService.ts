@@ -11,9 +11,10 @@ import { promises } from "fs";
  *@service
  *Transaction service
  *
+ *It injects mongoose model in this case a Transaction model
  *
- *
- *
+ *this class interacts with this model to save, delete, retrive the transaction
+ *as per controller's request or invokation in other services
  *
  */
 @Service()

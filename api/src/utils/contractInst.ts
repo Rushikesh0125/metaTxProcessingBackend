@@ -1,6 +1,8 @@
 import { ethers } from "ethers";
 import { contractaddresses as address } from "../constants";
 
+//Exports the fish in the pond[check @mtx/contracts] contract instance
+
 const abi = [
   {
     inputs: [

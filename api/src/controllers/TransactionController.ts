@@ -18,6 +18,11 @@ import { transactionBodyParams } from "src/types/types";
 import { MiddlewareA } from "src/middlewares/MiddlewareA";
 import { MiddlewareB } from "src/middlewares/MiddlewareB";
 
+/*
+ * @controller - transaction
+ * To handle saving, retrival, deletion of transactions
+ */
+
 @Controller("/transactions")
 export class TransactionController {
   constructor(private transactionService: TransactionService) {}

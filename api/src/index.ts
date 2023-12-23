@@ -4,6 +4,8 @@ import { Server } from "./server";
 import * as dotenv from "dotenv";
 dotenv.config();
 
+// bootstrapping server
+
 async function bootstrap() {
   try {
     $log.debug("Start server...");

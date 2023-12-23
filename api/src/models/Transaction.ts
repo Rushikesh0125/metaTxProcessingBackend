@@ -1,6 +1,14 @@
 import { Property, Required } from "@tsed/common";
 import { Model, ObjectID } from "@tsed/mongoose";
 
+/*
+ * @Model
+ * Transaction data model
+ *
+ * defines attributes and field that transaction should consist
+ * Also defines constructor, should be invoked to create an object of transaction type
+ */
+
 @Model()
 export class Transaction {
   @Required()

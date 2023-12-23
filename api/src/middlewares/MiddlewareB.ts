@@ -9,6 +9,13 @@ import { TransactionService } from "../service/TransactionService";
 import { executeTransaction } from "src/service/AutotaskService";
 import { UserService } from "src/service/UserService";
 
+/*
+ * @middleware
+ * To be triggered before the transaction is saved in DB
+ *
+ * It ensures that only registered user from DB can perform the transactions
+ */
+
 @Middleware()
 export class MiddlewareB implements IMiddleware {
   constructor(

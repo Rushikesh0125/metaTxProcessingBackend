@@ -12,6 +12,8 @@ import * as dotenv from "dotenv";
 import { MiddlewareA } from "./middlewares/MiddlewareA";
 import { MiddlewareB } from "./middlewares/MiddlewareB";
 
+//server config
+
 @Configuration({
   rootDir: __dirname,
   acceptMimes: ["application/json"],

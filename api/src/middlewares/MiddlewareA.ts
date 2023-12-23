@@ -3,6 +3,16 @@ import { TransactionService } from "../service/TransactionService";
 import { executeTransaction } from "src/service/AutotaskService";
 import { UserService } from "src/service/UserService";
 
+/*
+ * @middleware
+ * To be triggered after saving the transaction record to DB
+ *
+ * It implements middleware interface
+ *
+ * This middleware is triggered after saving 100th transaction in DB
+ * it triggers execution one by one, By sending transaction data to executeTransaction util function
+ */
+
 @Middleware()
 export class MiddlewareA implements IMiddleware {
   constructor(@Inject() private transactionService: TransactionService) {}

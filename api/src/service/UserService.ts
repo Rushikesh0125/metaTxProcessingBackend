@@ -2,6 +2,17 @@ import { Err, Inject, Service } from "@tsed/common";
 import { MongooseModel } from "@tsed/mongoose";
 import { User } from "../models/User";
 
+/*
+ *@service
+ *User service
+ *
+ *It injects mongoose model in this case a User model
+ *
+ *this class interacts with this model to save, delete, retrive the User
+ *as per controller's request or invokation in other services
+ *
+ */
+
 @Service()
 export class UserService {
   @Inject(User)
